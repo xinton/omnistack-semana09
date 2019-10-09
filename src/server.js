@@ -9,6 +9,11 @@ mongoose.connect('mongodb+srv://omnistack:omnistack@omnistack-k4yvo.mongodb.net/
     useUnifiedTopology: true,
 })
 
+// GET, POST, PUT, DELETE
+
+// req.query = Acessar query params (para filtros)
+// req.params = Acessar route params (para edição, delete)
+// req.body = Acessar corpo da requisição (para criação, edição)
 
 app.use(express.json())
 app.use(routes);
